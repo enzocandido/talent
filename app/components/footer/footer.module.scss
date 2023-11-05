@@ -1,0 +1,21 @@
+$mainColor: #181818;
+$textColor: #EEEE;
+$bodyColor: #212121;
+
+.footer {
+    width: 100%;
+    height: 4.25rem;
+    background-color: $mainColor;
+    display: flex;
+    color: $textColor;
+    justify-content: center;
+    align-items: center;
+
+    &_content {
+        display: flex;
+
+        li {
+            padding: 1.375rem;
+        }
+    }
+}

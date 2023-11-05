@@ -1,0 +1,37 @@
+$backgroundColor: #212121;
+$textColor: #EEEE;
+
+* {
+    color: $textColor;
+    text-decoration: none;
+}
+
+body {
+    background-color: $backgroundColor;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000000;
+    border: 5px none #212121;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #EEEE;
+}
+
+::-webkit-scrollbar-track {
+    background: #212121;
+    border: 5px none #525252;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 0px 0px #000000;
+}

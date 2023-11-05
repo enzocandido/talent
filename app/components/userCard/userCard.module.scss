@@ -1,0 +1,60 @@
+$cardBackground: #EEEE;
+$textColor: #212121;
+
+.card {
+    border-radius: 1.375rem;
+    width: 100%;
+    height: 280px;
+    background-color: $cardBackground;
+    color: $textColor;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+
+    &_content {
+        display: flex;
+
+        li {
+            padding: 1.375rem;
+        }
+
+        &_left {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+            gap: 2.25rem;
+
+            &_username {
+                color: $textColor;
+                font-size: 1.5rem;
+                font-weight: 600;
+                text-transform: capitalize;
+            }
+        }
+
+        &_right {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+
+            &_description {
+                color: $textColor;
+            }
+
+            &_dates {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                &_birthday {
+                    color: $textColor;
+                }
+
+                &_joined {
+                    color: $textColor;
+                }
+            }
+        }
+    }
+}

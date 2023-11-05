@@ -1,0 +1,50 @@
+$mainColor: #181818;
+$textColor: #EEEE;
+$bodyColor: #212121;
+
+.header {
+    background-color: $mainColor;
+    padding: 1.375rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    &_nav {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+
+        &_logo {
+            text-decoration: none;
+            font-weight: 700;
+            color: $textColor;
+            font-size: 1.4rem;
+            letter-spacing: 0.5em;
+            font-stretch: ultra-expanded;
+        }
+
+        &_search {
+            padding: .5rem;
+            background-color: $bodyColor;
+            border: none;
+            border-radius: 1rem;
+            text-align: center;
+        }
+
+        &_menu {
+            display: flex;
+            list-style: none;
+            border: none;
+
+            li {
+                margin-right: 1.375rem;
+                color: $textColor;
+            }
+
+            &_logged {
+                display: flex;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+$mainColor: #181818;
+
+.videos {
+    margin: 0 6rem;
+
+    &_content {
+        &_text {
+            font-size: 1.4rem;
+            font-weight: 700;
+
+            &_primary {
+                border-bottom: .3rem solid #fff;
+            }
+        }
+
+        &_videos {
+            margin: 2rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
+}

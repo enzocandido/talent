@@ -1,0 +1,23 @@
+.input {
+    display: flex;
+    flex-direction: column;
+
+    &_label {
+        margin: 12px 0;
+    }
+
+    &_box {
+        border: 1px solid #ccc;
+        background-color: #aaa;
+        border-radius: 4px;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+
+        &:focus {
+            outline: none;
+            border: 1px solid #aaa;
+        }
+    }
+}

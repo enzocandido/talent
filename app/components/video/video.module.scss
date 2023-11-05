@@ -1,0 +1,87 @@
+$mainColor: #181818;
+$bodyColor: #212121;
+$textColor: #EEEE;
+
+.videos {
+    background-color: $mainColor;
+    border-radius: 1rem;
+    margin: 1rem 0;
+
+    &_content {
+        padding: 1.375rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        &_name {
+            padding: 1.375rem;
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+
+        &_url {
+            border-radius: 1.375rem;
+        }
+
+        &_description {
+            padding: 1rem;
+            text-decoration: none;
+            font-size: 1rem;
+            max-width: 40%;
+            text-align: justify;
+        }
+
+        &_links {
+            display: flex;
+            gap: 1rem;
+
+            &_category {
+                text-decoration: none;
+                background-color: $bodyColor;
+                color: $textColor;
+                padding: 0.5rem;
+                border-radius: 0.25rem;
+                width: 5rem;
+                text-align: center;
+                margin-bottom: 0.75rem;
+            }
+
+            &_author {
+                text-decoration: none;
+                background-color: $bodyColor;
+                color: $textColor;
+                padding: 0.5rem;
+                border-radius: 0.25rem;
+                width: 5rem;
+                text-align: center;
+                margin-bottom: 0.75rem;
+            }
+        }
+
+        &_dateupload {
+            font-size: 0.75rem;
+        }
+
+        &_buttons {
+            display: flex;
+            padding: 1.375rem;
+            gap: 15rem;
+
+            li {
+                button {
+                    text-decoration: none;
+                    background-color: $bodyColor;
+                    color: $textColor;
+                    padding: 0.5rem;
+                    border: none;
+                    border-radius: 1.125rem;
+                    width: 4.25rem;
+                    text-align: center;
+                    font-size: 1.375rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
